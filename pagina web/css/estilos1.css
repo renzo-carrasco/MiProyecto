@@ -1,0 +1,319 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: url(../img/fondobody.png);
+}
+
+header {
+	width: 100%;
+	background-color: #98FB98;
+	position: fixed;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	top: 0;	
+}
+
+.menu {
+	width: 95%;
+	height: 90px;
+	max-width: 1100px;
+	margin: auto;
+	padding: .5em 0;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu .container-menu .logo .logo-name {
+	display: flex;
+	align-items: center;
+	height: 90px;
+}
+
+.menu .container-menu .logo .logo-name img {
+	width: 150px;
+	margin-top: 15px;
+}
+
+.menu .container-menu .logo .btn-menu {
+	text-decoration: none;
+	color: #333;
+	display: none;
+	font-size: 40px;
+}
+
+.menu .menu-link ul {
+	list-style: none;
+	background-color: #333;
+	border-radius: 2px;
+
+}
+
+.menu .menu-link ul li {
+	display: inline-block;
+	padding: 10px;
+}
+
+.menu .menu-link ul li a {
+	text-decoration: none;
+	font-family: 'Orbitron';
+	color: white;
+	transition: .2s;
+	border-bottom: 2px solid transparent;
+
+}
+
+.menu .menu-link ul li a:hover {
+	color: rgb(24, 153, 19);
+	border-bottom: 2px solid rgb(24, 153, 19);
+}
+
+.cot-dolar {
+	padding-top: 100px;
+	text-align: center;
+
+}
+
+.dolar-tc {
+	padding: 6px;
+}
+
+.general-dolar {
+    color: #fff;
+    display: inline-block;
+    font-family: arial time romans;
+    font-size: 13px;
+    border-bottom: 2px solid rgb(24, 153, 19);
+}
+
+.general-dolar p:hover {
+	color: rgb(24, 153, 19);
+	border-bottom: 2px solid rgb(24, 153, 19);
+}
+
+.wit {
+	margin-top: 100px;
+	width: 76%;
+	margin: auto;	
+	background-color:;
+}
+
+.banner {
+	position: relative;
+	background: url('../img/wallbitcoin.png');
+	background-position: center;
+	background-size: cover;
+    width: 100%;
+	max-width: 1100px;
+	top: ;
+	margin: auto;
+	height: 400px;
+	color: #fff;
+	border-radius: 20px;
+}
+
+.banner .bg-banner {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: green;
+	opacity: .1;
+}
+
+.banner .bg-details {
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
+
+}
+
+.banner .bg-details .details h1 {
+	font-size: 70px;
+	font-family: 'Orbitron';
+	font-weight: normal;
+	margin-bottom: 20px;
+
+}
+
+.banner .bg-details .details a {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	border: 2px solid green;
+	padding: 10px 25px;
+	border-radius: 10px;
+}
+
+.banner .bg-details .details a:hover {
+	background: rgb(24, 153, 19);
+}
+
+
+.icon-redes h1 {
+	font-family: 'Orbitron';
+	margin-top: 20px;
+}
+
+.icon-redes ul {
+	margin-top: px;
+	width: 100%;
+	background-color: orange;
+	padding:
+	height: 40px;
+	text-align: center;
+}
+
+.icon-redes li {
+	text-decoration: none;
+	background-color: #E0FFFF;
+	height: 40px;
+	margin-top: 10px;
+	list-style: none;
+}
+
+.icon-redes img {
+	width: 40px;
+	
+}
+
+	.text-h1 {
+		font-size: 40px;
+		color: black;
+		font-family: 'Orbitron';
+		text-align: center;
+		margin: auto;
+		padding: 10px;
+	}
+	.info-arbitraje .arb-cryp img {
+		width: 300px;
+		height: 450px;
+		border-radius: 20px;
+		margin-right: 20px;
+		margin-left: 30px;
+		margin-top: 30px;
+	}
+	.info-arbitraje {
+		width: 80%;
+		margin: auto;
+	}
+	.btc-arbitraje {
+		background-color: #8FBC8F;
+		margin-top: 100px;
+	}
+
+
+
+@media screen and (max-width: 700px) {
+	.menu .container-menu .logo .btn-menu {
+		display: block;
+		width: 100%;
+
+	}
+
+	.menu .container-menu {
+		width: 100%;
+	}
+
+	.icon-menu {
+		margin-left: 450px;
+	}
+
+	.icon-cross {
+		margin-left: 450px;
+	}
+
+	.menu .container-menu .logo {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.menu .menu-link {
+		position: absolute;
+		background: rgba(0,0,0,.7);
+		opacity: .9;
+		height: 100vh;
+		width: 100%;
+		top: 90px;
+		left: -100%;
+		z-index: 1000;
+		transition: .3s;
+	}
+
+	.menu .menu-link ul li {
+		display: block;
+	}
+
+	.menu .menu-link ul li a {
+		display: block;
+		height: 50px;
+		border-bottom: 2px solid #fff;
+		padding: 15px;
+		text-align: center;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.menu .container-menu .logo .logo-name {
+		font-size: 30px;
+	}
+
+	.banner .bg-details .details h1 {
+		font-size: 30px;
+	}
+
+	.banner .bg-details .details a {
+		font-size: 16px;
+		padding: 8px 15px;
+	}
+
+	.icon-menu {
+		width: 100%;
+		margin-left: 250px;
+	}
+
+    .icon-cross {
+		margin-left: 250px;
+}
+
+@media screen and (min-width: 412px) {
+	* {
+		width: 100%;
+	}
+	.icon-menu {
+		width: 100%;
+		margin-left: 180px;
+	}
+    .icon-cross {
+		margin-left: 180px;
+    }
+    .info-arbitraje .arb-cryp img {
+    	margin-left: 20px;
+    }
+
+
+@media screen and (max-width: 360px) {
+	.icon-menu {
+		width: 100%;
+		margin-left: 140px;
+	}
+	.icon-cross {
+		margin-left: 140px;1
+	}
+
+}

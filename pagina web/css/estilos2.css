@@ -1,0 +1,292 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: url(../img/fondobody.png);
+}
+
+header {
+	width: 100%;
+	background-color: #98FB98;
+	position: fixed;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	top: 0;
+}
+
+.menu {
+	width: 95%;
+	height: 90px;
+	max-width: 1100px;
+	margin: auto;
+	padding: .5em 0;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu .container-menu .logo .logo-name {
+	display: flex;
+	align-items: center;
+	height: 90px;
+}
+
+.menu .container-menu .logo .logo-name img {
+	width: 150px;
+	margin-top: 15px;
+}
+
+.menu .container-menu .logo .btn-menu {
+	text-decoration: none;
+	color: #333;
+	display: none;
+	font-size: 40px;
+}
+
+.menu .menu-link ul {
+	list-style: none;
+	background-color: #333;
+	border-radius: 2px;
+
+}
+
+.menu .menu-link ul li {
+	display: inline-block;
+	padding: 10px;
+}
+
+.menu .menu-link ul li a {
+	text-decoration: none;
+	font-family: 'Orbitron';
+	color: white;
+	transition: .2s;
+	border-bottom: 2px solid transparent;
+
+}
+
+.menu .menu-link ul li a:hover {
+	color: rgb(24, 153, 19);
+	border-bottom: 2px solid rgb(24, 153, 19);
+}
+
+
+.icon-redes h1 {
+	font-family: 'Orbitron';
+	margin-top: 20px;
+}
+
+.icon-redes ul {
+	margin-top: 150px;
+	width: 100%;
+	background-color: orange;
+	padding:
+	height: 40px;
+	text-align: center;
+}
+
+.icon-redes li {
+	text-decoration: none;
+	background-color: #E0FFFF;
+	height: 40px;
+	margin-top: 10px;
+	list-style: none;
+}
+
+.icon-redes img {
+	width: 40px;
+	
+}
+
+.contenedor {
+	margin-top: 200px;: 
+}
+
+.contenedor .form .form-header .form-title {
+	color: white;
+	font-family: 'Orbitron';
+}
+
+.contenedor .form {
+	font-family: 'Orbitron';
+	background: transparent;
+	color: white;
+	width: 90%;
+	max-width: 500px;
+	margin: auto;
+	border-radius: 7px;
+	padding: 5px 35px 5px 35px;
+}
+
+.contenedor .form .form-label {
+	display: block;
+	position: relative;
+}
+
+.contenedor .form .form-input {
+	width: 400px;
+	height: 40px;
+	border-radius: 7px;
+	border: 3px solid #90EE90;
+
+}
+
+.contenedor .form .form-textarea {
+	width: 400px;
+	height: 50px;
+	border-radius: 7px;
+	border: 3px solid #90EE90;
+}
+
+.contenedor .form .btn-submit {
+	width: 200px;
+	height: 30px;
+	background-color: orange;
+	border-radius: 7px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.contenedor .form .btn-submit:hover {
+	background-color: #90EE90;
+}
+
+@media screen and (max-width: 700px) {
+	.menu .container-menu .logo .btn-menu {
+		display: block;
+		width: 100%;
+
+	}
+
+	.menu .container-menu {
+		width: 100%;
+	}
+
+	.icon-menu {
+		margin-left: 450px;
+	}
+
+	.icon-cross {
+		margin-left: 450px;
+	}
+
+	.menu .container-menu .logo {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.menu .menu-link {
+		position: absolute;
+		background: rgba(0,0,0,.7);
+		opacity: .9;
+		height: 100vh;
+		width: 100%;
+		top: 90px;
+		left: -100%;
+		z-index: 1000;
+		transition: .3s;
+	}
+
+	.menu .menu-link ul li {
+		display: block;
+	}
+
+	.menu .menu-link ul li a {
+		display: block;
+		height: 50px;
+		border-bottom: 2px solid #fff;
+		padding: 15px;
+		text-align: center;
+		margin: 0;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+	.menu .container-menu .logo .logo-name {
+		font-size: 30px;
+	}
+
+	.banner .bg-details .details h1 {
+		font-size: 30px;
+	}
+
+	.banner .bg-details .details a {
+		font-size: 16px;
+		padding: 8px 15px;
+	}
+
+	.icon-menu {
+		width: 100%;
+		margin-left: 250px;
+	}
+
+    .icon-cross {
+		margin-left: 250px;
+}
+
+
+@media screen and (min-width: 412px) {
+	.icon-menu {
+		width: 100%;
+		margin-left: 180px;
+	}
+
+    .icon-cross {
+		margin-left: 180px;
+	}	
+
+	.contenedor .form {
+    	margin: 0;
+    	margin-top: -60px;
+    	width: 100%;
+    }
+
+    .contenedor .form .form-input {
+	    width: 340px;
+
+    }
+
+    .contenedor .form .form-textarea {
+        width: 340px;
+    }			
+}
+
+@media screen and (max-width: 360px) {
+	.icon-menu {
+		width: 100%;
+		margin-left: 140px;
+	}
+	.icon-cross {
+		margin-left: 140px;1
+	}
+
+	.contenedor {
+		margin-top: 150px;
+	}
+	.contenedor .form .form-header .form-title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .contenedor .form {
+    	margin: 0;
+    	width: 100%;
+    }	
+
+    .contenedor .form .form-input {
+	    width: 300px;
+
+    }
+
+    .contenedor .form .form-textarea {
+        width: 300px;
+    }	
+	
+
+}
