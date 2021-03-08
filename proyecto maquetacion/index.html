@@ -1,0 +1,62 @@
+<!DOCTYPE html>	<!--   -->
+<html lang="en">	<!-- CODIGO HTML -->    <!-- el explorador carga primero de izquiera a derecha, de arriba a abajo -->
+<head>	<!-- Parte NO VISIBLE: conf/meta/link -->
+	<meta charset="UTF-8">	<!-- codificacion caracteres -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=3"> <!-- viewport: navegador -->
+	<title>Maquetacion Web</title>
+	<link rel="icon" type="text/css" href="assets/icon/css.svg">	<!-- jpg .png .gif .svg -->
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+</head>
+<body>	<!-- Parte VISIBLE: content/img/text -->
+	<nav>	<!-- nav>ul.menu>li*4{Link $}[href="#links"]   TABULACION CON EMET -->
+		<ul class="menu">
+			<li href="#links">Link 1</li>
+			<li href="#links">Link 2</li>
+			<li href="#links">Link 3</li>
+			<li href="#links">Link 4</li>
+		</ul>
+	</nav>	<!-- (header#header>h1{Maquetacion Web}+p{html - css - js})+section>h2{Estructura Semantica}+p+ul.example>li+strong+li -->
+	<header id="header">   <!-- El H! y P son hijos de header y el SECTION es hermano del HEADER al igual que el NAV -->
+		<h1>Maquetacion Web</h1>
+		<p>html - css - js</p>
+	</header>
+	<section>
+		<h2>Estructura Semantica</h2>
+		<p></p>
+		<ul class="example">
+			<li>
+				<strong>HEADER: </strong>
+				Representa la cabecera, contiene los titulos y en ocasiones suele poseer alguna galeria a modo de presentacion, asi como tambien la navegacion.
+				<em> Responde a la pregunta ¿QUIENES SOMOS?</em>				
+			</li>
+				<strong>NAV: </strong>
+				Representa la navegacion principal, contiene los links mas importantes y solamente debe poseer aquellos que esten relacionados con el sitio.
+				<em> responde a la pregunta ¡DONDE PUEDE IR EL USUARIO?</em>
+			</li>	
+			<li>
+				<strong>MAIN: </strong>
+				Representa el contenido principal, lo mas importante dentro de nuestra pagina con relacion a la informacion solicitada por el usuario.
+			</li>	
+			<li>
+				<strong>SECTION: </strong>
+				Representa una parte o seccion de la pagina, tambien conocida como contenido contextualizado. Funciona solamente dentro de la pagina y depende de otros elementos para su total comprension.
+			</li>	
+			<li>
+				<strong>ARTICLE: </strong>
+				Representa un elemento independiente, funciona tanto dentro como fuera de la pagina debido a que posee su propia estructura y es autoconclusivo. Normalmente se utiliza para definiciones, noticias o publicaciones.
+			</li>
+			<li>
+				<strong>ASIDE: </strong>
+				Representa un contenido tangencial o informacion lateral y se relaciona indirectamente con sus hermanos. Se utiliza para mostrar sugerencias o publicidad dentro de la pagina.
+			</li>
+			<li>
+				<strong>FOOTER: </strong>
+				Representa el pie de pagina, contiene informacion complemetaria al cuerpo de la misma, suele poseer un formulario/informacion de contacto, asi como tambien el copyright y en ciertas ocasiones un mapa del sitio para oriental mejor al usuario.
+				<em> Responde a la pregunta ¿COMO ENCONTRARNOS?</em>
+			</li>									
+		</ul>
+	</section>
+	<script src="scripts/main.js"></script>
+		
+</body>	
+</html>

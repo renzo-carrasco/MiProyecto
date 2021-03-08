@@ -1,0 +1,64 @@
+/*Reglas Genrales*/}
+	*{
+		box-sizing:border-box;
+		font-family: segoe ui, sans-serif;
+		/*
+			content-box:
+				content-width = width;
+				final-width = width + padding + border
+				;
+			border-box:;
+				final-width = width
+				content-width = width - padding - border
+				;
+		*/	
+	}
+	body {
+		margin: 0;
+	}
+/*Navegacion*/
+	.menu{
+		list-style: none;  /*sin viñetas*/
+		margin: 0;  /*sin margen*/
+		padding: 0;
+		text-align: center;
+		background-color: #eee;  /*RRGGBB (ROJO-VERDE Y AZUL) (hx 00:min; FF:max)*/
+	}
+	.menu li{
+		display: inline-block; 
+		padding: 4px 8px;	/* variables TOP-RIGHT-BOTTOM-LEFT*/
+		/*
+			inline;  etiqueta de linea
+			inline-block;  etiqueta una alado del otro
+			block;
+		*/	
+	}
+	.menu li:hover{  /*pasar el mouse por arriba*/
+		background-color: #999;	
+	}
+	.menu a{
+		color: #333;
+		text-decoration: none;
+	}
+
+/*Cabecera*/
+	#header{
+		padding: 1rem; /*por defecto: 16px;*/
+	}
+	h1{
+		margin: 0;
+		font-family: segoe ui;
+		
+		letter-spacing: 5px;   /*espacio entre letras*/
+	}
+	header{
+		width: 400px;  /* alto */
+		border: 2px solid #333;  /*borde / ancho / solido y color */
+		padding: 20px;
+		background-color: #eee;  /*color de fondo*/
+	}
+
+
+/*Contenido*/
+
+/*Pie de pagina*/	
